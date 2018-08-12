@@ -20,16 +20,15 @@
 #  Code Version: 2.8.4 THETA Θ
 #  Type "version" , "yelp" or "authors" for more info
 
-#  Thanks to the Anaconda team, Python.org & iPython for making this program come true
-#  & making programming assessible to everyone. :-)
-#  Without them this program would not have come true.
+#
+#
+#
 
 """
 
 
 
-#__name__ = '__main__'
-# uncomment to always ensure __name__ = '__main__' and avoid errors
+#__name__ = '__main__' <= Testing purposes only
 
 
 import math # import math module
@@ -38,10 +37,8 @@ authors = "Hemanya Sharma & Naveen Sharma"
 version = "2.8.4"
 yelp = "The Prime Number Checker (TPNC) is a SUPER-EFFICIENT Prime-number finder that can find hundreds of numbers in a blink of an eye!"
 
-
 minimum = 1
 two = 2
-
 
 class colors: # Gets a bit dark in iPython
     RED = '\033[31m'
@@ -51,11 +48,10 @@ class colors: # Gets a bit dark in iPython
 
 
 # isPrime - Predicate function that tells whether the giver number is prime or not.
-# It uses an efficient mechamism of log (N) where N is the number of digits in the input
-def isPrime (num): # make a function called isPrime
+# It uses an efficient mechanism of log (N) where N is the number of digits in the input
+def isPrime (num):
     
    num = abs (num) # Get abs (absolute) value
-
    if (num <= minimum):
        print (colors.GREEN + "The number" , num , "is neither a prime number nor a composite number.\n" , colors.ENDC)
        return False # Return False if the number is not prime
@@ -97,6 +93,7 @@ else:
         print ("Fixed the problem...",colors.GREEN + "OK\n" , colors.ENDC)
     else:
         print ("An unknown error occured: Unknown! *_*\n")
+
 
 
 
