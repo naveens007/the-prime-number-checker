@@ -7,10 +7,24 @@
  
 #  Encoding = UTF-8  Made for = /usr/bin/python3
 #  Written by: Hemanya Sharma & Naveen Sharma
-#  This code is completely FREE and OPEN-SOURCE but comes WITHOUT ANY WARRANTY!
-#  Do whatever you want to do with this code...and all that GPL stuff...
-#  This Code comes under the licence: GNU GPL Version 3+
-#  FREE means free as in freedom...not free as in beer!
+#
+#   The Prime Number Checker (TPNC)
+    Copyright (C) 2018  Hemanya Sharma & Naveen Sharma
+
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
  
 #  Please contribute to this by reporting bugs and making it better....
 #  This code may have some MINOR BUGS....still very stable.
