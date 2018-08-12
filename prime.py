@@ -5,8 +5,8 @@
 """
 #  The Prime Number Checker (TPNC)
  
-#  Encoding = UTF-8  Made for = /usr/bin/python3
-#  Written by: Hemanya Sharma & Naveen Sharma
+#   Encoding = UTF-8  Made for = /usr/bin/python3
+#   Written by: Hemanya Sharma & Naveen Sharma
 #
 #   The Prime Number Checker (TPNC)
 #   Copyright (C) 2018  Hemanya Sharma & Naveen Sharma
@@ -24,19 +24,13 @@
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+#   Please contribute to this by reporting bugs and making it better....
+#   This code may have some MINOR BUGS....still very stable.
+#   Does not print colored output in IDLE and may print GARBLED characters!
+#   WARNING: Do not use as a module!
 
- 
-#  Please contribute to this by reporting bugs and making it better....
-#  This code may have some MINOR BUGS....still very stable.
-#  Does not print colored output in IDLE and may print GARBLED characters!
-#  WARNING: Do not use as a module!
-
-#  Code Version: 1.0.1 THETA Θ
-#  Type "version" , "yelp" or "authors" for more info
-
-#
-#
-#
+#   Code Version: 1.0.2 THETA Θ
+#   Type "version" , "yelp" or "authors" for more info
 
 """
 
@@ -48,8 +42,8 @@
 import math # import math module
 
 authors = "Hemanya Sharma & Naveen Sharma"
-version = "1.0.1 THETA"
-yelp = "The Prime Number Checker (TPNC) is a SUPER-EFFICIENT Prime-number finder that can find hundreds of numbers in a blink of an eye!"
+version = "1.0.2 THETA"
+yelp = "The Prime Number Checker (TPNC) is a SUPER-EFFICIENT Prime-number finder that uses an efficient mechanism of log (N) where N is the number of digits in the input."
 
 minimum = 1
 two = 2
@@ -61,8 +55,8 @@ class colors: # Gets a bit dark in iPython
     NEG1 = '\033[3m'
 
 
-# isPrime - Predicate function that tells whether the giver number is prime or not.
-# It uses an efficient mechanism of log (N) where N is the number of digits in the input
+# isPrime - Predicate function that tells whether the giver number is prime or not...
+# It uses an efficient mechanism of log (N) where N is the number of digits in the input.
 def isPrime (num):
     
    num = abs (num) # Get abs (absolute) value
@@ -81,20 +75,16 @@ def isPrime (num):
 
 
 
-
 def mains ():
     try:
         num = int(input('Enter an integer: '))
-
+        isPrime (num)
+        return "isPrime called!"
     except ValueError:
         print (colors.RED + "Invalid input, Please enter a INTEGER only. QUITTING -_- \n" , colors.ENDC)
         return "ERROR"
 
-    isPrime (num)
-    return
-
-
-
+   
 
 if (__name__ == '__main__'):
     mains ()
@@ -107,7 +97,6 @@ else:
         print ("Fixed the problem...",colors.GREEN + "OK\n" , colors.ENDC)
     else:
         print ("An unknown error occured: Unknown! *_*\n")
-
 
 
 
