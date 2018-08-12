@@ -17,7 +17,7 @@
 #  Does not print colored output in IDLE and may print GARBLED characters!
 #  WARNING: Do not use as a module!
 
-#  Code Version: 2.8.4 THETA Θ
+#  Code Version: 1.0.1 THETA Θ
 #  Type "version" , "yelp" or "authors" for more info
 
 #
@@ -34,7 +34,7 @@
 import math # import math module
 
 authors = "Hemanya Sharma & Naveen Sharma"
-version = "2.8.4"
+version = "1.0.1 THETA"
 yelp = "The Prime Number Checker (TPNC) is a SUPER-EFFICIENT Prime-number finder that can find hundreds of numbers in a blink of an eye!"
 
 minimum = 1
