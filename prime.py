@@ -34,7 +34,6 @@
 """
 
 
-
 import math # import math module
 
 authors = "Hemanya Sharma & Naveen Sharma"
@@ -44,11 +43,10 @@ yelp = "The Prime Number Checker (TPNC) is a SUPER-EFFICIENT Prime-number finder
 minimum = 1
 two = 2
 
-class colors: # Gets a bit dark in iPython
+class colors: # You may need to change color settings in iPython
     RED = '\033[31m'
     ENDC = '\033[m'
     GREEN = '\033[32m'
-    NEG1 = '\033[3m'
 
 
 
@@ -58,15 +56,13 @@ class colors: # Gets a bit dark in iPython
 def isPrime (num):
    num = abs (num) # Get abs (absolute) value
    if (num <= minimum):
-       print (colors.GREEN + "The number" , num , "is neither a prime number nor a composite number.\n" , colors.ENDC)
+       print (colors.GREEN + "The number" , num , "is neither a prime number nor a composite number.\n" , colors.ENDC)      
        return False # Return False if the number is not prime
-
    for i in range (two , two + int(math.log(num))):
        if (num % i) == 0:
-           print ( colors.GREEN + "The number",num,"is not a prime number...")
+           print (colors.GREEN + "The number",num,"is not a prime number...")
            print ("because",num,"divided by", i,"is" , num//i , "\n" , colors.ENDC)
            return False # Return False if the number is not prime
-
    print (colors.GREEN + "The number",num,"is a prime number.\n" , colors.ENDC)
    return True # Return False if the number is prime
 
@@ -87,8 +83,6 @@ def mains ():
 if (__name__ == '__main__'):
     mains ()
 
-else:
-    print ("Running code as a module...\n")
 
 
 ##########################
