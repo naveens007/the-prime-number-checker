@@ -4,7 +4,7 @@
 
 """
 #  The Prime Number Checker (TPNC)
- 
+
 #   Encoding = UTF-8  Made for = /usr/bin/python3
 #   Written by: Hemanya Sharma & Naveen Sharma
 #
@@ -29,7 +29,7 @@
 #   Does not print colored output in IDLE and may print GARBLED characters!
 #   WARNING: Do not use as a module!
 
-#   Code Version: 1.0.2 THETA Θ
+#   Code Version: 1.0.3 THETA Θ
 #   Type "version" , "yelp" or "authors" for more info
 
 """
@@ -42,7 +42,7 @@
 import math # import math module
 
 authors = "Hemanya Sharma & Naveen Sharma"
-version = "1.0.2 THETA"
+version = "1.0.3 THETA"
 yelp = "The Prime Number Checker (TPNC) is a SUPER-EFFICIENT Prime-number finder that uses an efficient mechanism of log (N) where N is the number of digits in the input."
 
 minimum = 1
@@ -58,7 +58,7 @@ class colors: # Gets a bit dark in iPython
 # isPrime - Predicate function that tells whether the giver number is prime or not...
 # It uses an efficient mechanism of log (N) where N is the number of digits in the input.
 def isPrime (num):
-    
+
    num = abs (num) # Get abs (absolute) value
    if (num <= minimum):
        print (colors.GREEN + "The number" , num , "is neither a prime number nor a composite number.\n" , colors.ENDC)
@@ -71,7 +71,7 @@ def isPrime (num):
            return False # Return False if the number is not prime
 
    print (colors.GREEN + "The number",num,"is a prime number.\n" , colors.ENDC)
-   return True # Return Talse if the number is prime
+   return True # Return False if the number is prime
 
 
 
@@ -84,7 +84,7 @@ def mains ():
         print (colors.RED + "Invalid input, Please enter a INTEGER only. QUITTING -_- \n" , colors.ENDC)
         return "ERROR"
 
-   
+
 
 if (__name__ == '__main__'):
     mains ()
@@ -92,11 +92,11 @@ if (__name__ == '__main__'):
 else:
     if (__name__ != '__main__'):
 
-        print ("An error occured: __name__ of" , type(__name__) , "equals" , colors.NEG1 + __name__ , colors.ENDC)
+        print ("An error occurred: __name__ of" , type(__name__) , "equals" , colors.NEG1 + __name__ , colors.ENDC)
         __name__ = '__main__'
         print ("Fixed the problem...",colors.GREEN + "OK\n" , colors.ENDC)
     else:
-        print ("An unknown error occured: Unknown! *_*\n")
+        print ("An unknown error occurred: Unknown! *_*\n")
 
 
 
