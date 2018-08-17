@@ -28,7 +28,7 @@
 #   This code may have some MINOR BUGS....still very stable.
 #   Does not print colored output in IDLE and may print GARBLED characters!
 
-#   Code Version: 1.0.4 THETA Θ
+#   Code Version: 1.0.5 THETA Θ
 #   Type "version" , "yelp" or "authors" for more info
 
 """
@@ -37,7 +37,7 @@
 import math # import math module
 
 authors = "Hemanya Sharma & Naveen Sharma"
-version = "1.0.4 THETA"
+version = "1.0.5 THETA"
 yelp = "The Prime Number Checker (TPNC) is a SUPER-EFFICIENT Prime-number finder that uses an efficient mechanism of log (N) where N is the number of digits in the input."
 
 minimum = 1
@@ -56,7 +56,7 @@ class colors: # You may need to change color settings in iPython
 def isPrime (num):
    num = abs (num) # Get abs (absolute) value
    if (num <= minimum):
-       print (colors.GREEN + "The number" , num , "is neither a prime number nor a composite number.\n" , colors.ENDC)      
+       print (colors.GREEN + "The number" , num , "is neither a prime number nor a composite number.\n" , colors.ENDC)
        return False # Return False if the number is not prime
    for i in range (two , two + int(math.log(num))):
        if (num % i) == 0:
@@ -75,7 +75,7 @@ def mains ():
         isPrime (num)
         return "isPrime called!"
     except ValueError:
-        print (colors.RED + "Invalid input, Please enter a INTEGER only. QUITTING -_- \n" , colors.ENDC)
+        print (colors.RED + "Invalid input, Please enter a INTEGER only. QUITTING 😞\n" , colors.ENDC)
         return "ERROR"
 
 
