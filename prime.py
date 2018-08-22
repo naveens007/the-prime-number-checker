@@ -28,7 +28,7 @@
 #   This code may have some MINOR BUGS....still very stable.
 #   Does not print colored output in IDLE and may print GARBLED characters!
 
-#   Code Version: 1.0.5 THETA Θ
+#   Code Version: 1.0.5 Stable
 #   Type "version" , "yelp" or "authors" for more info
 
 """
@@ -37,7 +37,7 @@
 import math # import math module
 
 authors = "Hemanya Sharma & Naveen Sharma"
-version = "1.0.5 THETA"
+version = "1.0.5 Stable"
 yelp = "The Prime Number Checker (TPNC) is a SUPER-EFFICIENT Prime-number finder that uses an efficient mechanism of log (N) where N is the number of digits in the input."
 
 minimum = 1
@@ -47,7 +47,6 @@ class colors: # You may need to change color settings in iPython
     RED = '\033[31m'
     ENDC = '\033[m'
     GREEN = '\033[32m'
-
 
 
 # isPrime - Predicate function that tells whether the giver number is prime or not...
@@ -67,8 +66,6 @@ def isPrime (num):
    return True # Return False if the number is prime
 
 
-
-
 def mains ():
     try:
         num = int(input('Enter an integer: '))
@@ -82,7 +79,6 @@ def mains ():
 
 if (__name__ == '__main__'):
     mains ()
-
 
 
 ##########################
