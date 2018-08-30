@@ -14,4 +14,4 @@ An efficient prime number checker that can check prime numbers faster than multi
 
 ## Warnings/Problems
 
-May print garbled text in IDLE&#47;IDLE3 &amp; python2.
+May print garbled text in IDLE&#47;IDLE3 &amp; python2.   <== Solved
