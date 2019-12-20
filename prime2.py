@@ -66,7 +66,7 @@ def isPrime (num):
            return False # Return False if the number is not prime
    print colors.GREEN + "The number",num,"is a prime number."
    print colors.ENDC
-   return True # Return False if the number is prime
+   return True # Return True if the number is prime
 
 
 def mains ():
