@@ -4,33 +4,26 @@
 
 """
 #  The Prime Number Checker (TPNC)
-
 #   Encoding = UTF-8  Made for = /usr/bin/python3
 #   Written by: Hemanya Sharma & Naveen Sharma
 #
 #   The Prime Number Checker (TPNC)
 #   Copyright (C) 2018  Hemanya Sharma & Naveen Sharma
-
 #   This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
 #   the Free Software Foundation, either version 3 of the License, or
 #   (at your option) any later version.
-
 #   This program is distributed in the hope that it will be useful,
 #   but WITHOUT ANY WARRANTY; without even the implied warranty of
 #   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #   GNU General Public License for more details.
-
 #   You should have received a copy of the GNU General Public License
 #   along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 #   Please contribute to this by reporting bugs and making it better....
 #   This code may have some MINOR BUGS....still very stable.
 #   Does not print colored output in IDLE and may print GARBLED characters!
-
 #   Code Version: 1.0.5 Stable
 #   Type "version" , "yelp" or "authors" for more info
-
 """
 
 
@@ -54,7 +47,7 @@ def isPrime (num):
    if (num <= 1):
        print (colors.GREEN + "The number" , num , "is neither a prime number nor a composite number.\n" , colors.ENDC)
        return False # Return False if the number is not prime
-   for i in range (2, 2 + int(math.log(num))):
+   for i in range (2, 2 + int(math.sqrt(num))):
        if (num % i) == 0:
            print (colors.GREEN + "The number",num,"is not a prime number...")
            print ("because",num,"divided by", i,"is" , num//i , "\n" , colors.ENDC)
