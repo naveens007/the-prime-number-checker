@@ -40,9 +40,6 @@ authors = "Hemanya Sharma & Naveen Sharma"
 version = "1.0.5 Stable"
 yelp = "The Prime Number Checker (TPNC) is a SUPER-EFFICIENT Prime-number finder that uses an efficient mechanism of log (N) where N is the number of digits in the input."
 
-minimum = 1
-two = 2
-
 class colors: # You may need to change color settings in iPython
     RED = '\033[31m'
     ENDC = '\033[m'
@@ -54,10 +51,10 @@ class colors: # You may need to change color settings in iPython
 
 def isPrime (num):
    num = abs (num) # Get abs (absolute) value
-   if (num <= minimum):
+   if (num <= 1):
        print (colors.GREEN + "The number" , num , "is neither a prime number nor a composite number.\n" , colors.ENDC)
        return False # Return False if the number is not prime
-   for i in range (two , two + int(math.log(num))):
+   for i in range (2, 2 + int(math.log(num))):
        if (num % i) == 0:
            print (colors.GREEN + "The number",num,"is not a prime number...")
            print ("because",num,"divided by", i,"is" , num//i , "\n" , colors.ENDC)
